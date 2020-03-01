@@ -2,9 +2,11 @@
   class="btn btn-primary"
   style="margin-bottom: 1rem;"
   [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
 >
   Add Server
 </button>
 <p>{{ allowNewServer }}</p>
-<p [innerText]="allowNewServer"></p>
+<!-- <p [innerText]="allowNewServer"></p> -->
+<p>{{ serverConnectionStatus }}</p>
 <app-server></app-server>
