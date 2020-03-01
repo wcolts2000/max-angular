@@ -8,4 +8,5 @@ import { EventEmitter } from "protractor";
 })
 export class AppComponent {
   title: string = "Angular App";
+  name: string = "Sean Pheneger";
 }
